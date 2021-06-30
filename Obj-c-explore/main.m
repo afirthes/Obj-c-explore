@@ -6,11 +6,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RSPerson.h"
 
 int main(int argc, const char * argv[]) {
   @autoreleasepool {
-      // insert code here...
-      NSLog(@"Hello, World!");
+    NSLog(@"\nHello, World!\n");
+    RSPerson *object = [[RSPerson alloc] initWithName: @"Mike"];
+    [object sayHello];
   }
   return 0;
 }
